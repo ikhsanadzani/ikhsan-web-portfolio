@@ -144,7 +144,26 @@ img {
 
 /*=============== BLOB ===============*/
 /* Blob animate */
+.blob-animate {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(100deg, 
+                var(--first-color-alt) 20%,
+                var(--first-color-light)100%);
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(35px);
+    animation: blob 5s linear infinite;
+}
 
+@keyframes animateBlob {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 /* Blob */
 
@@ -164,6 +183,11 @@ img {
         var(--body-color) 60%,
         hsl(240, 100%, 2%, 0) 100%);
     z-index: var(--z-fixed);
+}
+
+.header .blob-animate {
+    top: -3rem;
+    left: -3rem;
 }
 
 .nav {
@@ -196,6 +220,12 @@ img {
     font: var(--font-semi-bold) var(--small-font-size) var(--second-font);
     transition: color .4s tex-shadow .4s;
 }
+
+.nav-link:hover {
+    color: var(--first-color);
+    text-shadow: 0 8px 16px var(--first-color);
+}
+
 /* Active link */
 
 
