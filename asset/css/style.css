@@ -153,7 +153,8 @@ img {
     border-radius: 50%;
     position: absolute;
     filter: blur(35px);
-    animation: blob 5s linear infinite;
+    animation: animateBlob 5s linear infinite;
+    z-index: -1;
 }
 
 @keyframes animateBlob {
@@ -175,14 +176,20 @@ img {
 
 
 /*=============== HEADER & NAV ===============*/
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;    
+    width: 100%; /* Wajib ditambahin biar header penuh ujung ke ujung */
     background: linear-gradient(180deg,
         var(--body-color) 60%,
         hsl(240, 100%, 2%, 0) 100%);
     z-index: var(--z-fixed);
+}
+
+.header .blob-animate {
+  top: -3rem;
+  left: -3rem;
 }
 
 .header .blob-animate {
@@ -279,13 +286,35 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
+@media screen and (max-width: 320px) { 
+  .container {
+    margin-inline: 1rem;
+  }
+}
 
 /* For medium devices */
 
 
 /* For large devices */
+@media screen and (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
 
+  .nav {
+    height: calc(var(--header-height) +2rem);
+    align-items: center;
+  }
+
+  .nav-logo {
+    align-self: initial;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    column-gap: 5.5rem;
+  }
+}
 
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
 
