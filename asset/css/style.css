@@ -237,8 +237,38 @@ img {
 
 
 /*=============== HOME ===============*/
+.home {
+  position: relative;
+}
 
+.home-container {
+  position: relative;
+  padding-top: 4rem;
+  row-gap: 3rem;
+}
 
+.home-greeting{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-regular);
+  color: var(--first-color);
+}
+
+.home-name {
+  font-size: var(--biggest-font-size);
+}
+
+.home-image {
+  position: relative;
+  display: grid;
+  overflow-x: clip;
+}
+
+.home-image .blob-animate {
+  width: 250px;
+  height: 250px;
+  bottom: 0;
+  justify-self: center;
+}
 /*=============== BUTTON ===============*/
 
 
