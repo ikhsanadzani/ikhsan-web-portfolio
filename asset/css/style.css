@@ -282,12 +282,12 @@ img {
 
 .home-shadow {
   width: 100%;
-  height: 250px;
+  height: 350px;
   bottom: 1rem;
   z-index: 1;
   background: linear-gradient(180deg,
               hsla(240, 100%, 2%, 0) 60%,
-              hsl(240, 100%, 2%) 85%);
+              hsl(240, 100%, 2%) 95%);
 }
 
 .home-info {
@@ -318,7 +318,7 @@ img {
   width: 100%;
   height: 100%;
   background: linear-gradient(0deg,
-              hsl(0, 0%, 0%) 10%
+              hsl(0, 0%, 0%) 10%,
               hsla(0, 0%, 0%, 0) 60%);
   position: absolute;
   top: 0;
@@ -484,8 +484,41 @@ img {
     right: 0;
     margin-inline: auto;
     background: linear-gradient(180deg,
-                hsla(240, 100%, 2%, 0) 60%,
-                hsl(240, 100%, 2%) 85%);
+                hsla(240, 100%, 2%, 0) 50%,
+                hsl(240, 100%, 2%) 90%);
+  }
+
+  .home-data {
+    position: absolute;
+    top: 12rem;
+    left: 3rem;
+    z-index: 2;
+  }
+
+  .home-info {
+    top: 12rem;
+    right: 1rem;
+    bottom: initial;
+  }
+
+  .home-split {
+    font-size: var(--h2-font-size);
+  }
+
+  .home-profession-1{
+    font-size: var(--bigger-font-size);
+    text-align: initial;
+  }
+
+  .home-profession-2 {
+    font-size: var(--bigger-font-size);
+    transform: translateY(-1.5rem);
+  }
+
+  .home-social {
+    bottom: 3rem;
+    row-gap: 1.5rem;
+      top: 15rem;
   }
 }
 
