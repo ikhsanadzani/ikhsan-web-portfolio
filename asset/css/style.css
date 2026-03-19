@@ -128,13 +128,13 @@ img {
   padding-block: 5rem 1rem;
 }
 
-.section__title {
+.section-title {
   text-align: center;
   font-size: var(--h1-font-size);
   margin-bottom: 3rem;
 }
 
-.section__title span {
+.section-title span {
   color: var(--first-color);
 }
 
@@ -369,11 +369,57 @@ img {
   color: var(--first-color);
 }
 /*=============== BUTTON ===============*/
+.button {
+  background-color: var(--body-color);
+  border: 3px solid var(--first-color);
+  color: var(--first-color);
+  padding: 1rem 2rem;
+  box-shadow: 0 8px 32px hsla(var(--hue), 60%, 64% .5),
+              inset 8px -8px 30px var(--first-color-alt-2);
+  border-radius: 4rem;
+  font-family: var(--second-font);
+  font-weight: var(--font-semi-bold);
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem;
+  transition: box-shadow .4s;
+}
 
+.button i {
+  font-weight: initial;
+  font-size: 1rem;
+}
+
+.button:hover {
+  box-shadow: 0 8px 48px hsla(var(--hue), 60%, 64% .8),
+              inset 8px -8px 30px var(--first-color-alt);
+}
 
 /*=============== ABOUT ===============*/
+.about {
+  position: relative;
+}
+
+.about-container {
+  row-gap: 3rem;
+  overflow-y: clip;
+}
+
+.about-data .section-title {
+  margin-bottom: 1.5rem;
+  text-align: initial;
+}
 
 
+.about-description {
+  font-size: var(--h2-font-size);
+  margin-bottom: 2rem;
+}
+
+.about-description b {
+  color: var(--first-color);
+  font-weight: var(--font-semi-bold);
+}
 /*=============== PROJECTS ===============*/
 
 
