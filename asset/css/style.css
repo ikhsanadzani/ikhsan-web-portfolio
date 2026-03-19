@@ -254,7 +254,7 @@ img {
 }
 
 .home-name {
-  font-size: var(--biggest-font-size);
+  font-size: var(--bigger-font-size);
 }
 
 .home-image {
@@ -500,7 +500,7 @@ img {
 
   .home-data {
     position: absolute;
-    top: 12rem;
+    top: 5rem;
     left: 3rem;
     z-index: 2;
   }
@@ -516,7 +516,7 @@ img {
   }
 
   .home-profession-1{
-    font-size: var(--bigger-font-size);
+    font-size: var(--bigger-font-size );
     text-align: initial;
   }
 
@@ -526,9 +526,20 @@ img {
   }
 
   .home-social {
-    bottom: 3rem;
+    bottom: .1rem;
     row-gap: 1.5rem;
+    margin-left: 2.8rem;
     
+  }
+
+  .home-social-link {
+    font-size: 1.5rem;
+  }
+
+  .home-cv {
+    font-size: var(--normal-font-size);
+    rotate: 0deg;
+    right: 0;
   }
 }
 
