@@ -167,7 +167,17 @@ img {
 }
 
 /* Blob */
-
+.blob {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(180deg, 
+              var(--first-color-alt) 0%,
+              var(--first-color-alt)100%);
+  border-radius: 50%;
+  filter: blur(50px);
+  position: absolute;
+  z-index: -1;
+}
 
 /*=============== CUSTOM CURSOR ===============*/
 
@@ -452,6 +462,95 @@ img {
 }
 
 /*=============== PROJECTS ===============*/
+.project .section-title {
+  text-align: initial;
+  margin-left: 1.5rem;
+}
+
+.project-card {
+  position: relative;
+  background-color: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.project-card .blob {
+  z-index: 0;
+  right: -7.75rem;
+  bottom: 0;
+}
+
+.project-number, .project-data, .project-image {
+  position: relative;
+  z-index: 1;
+}
+
+.project-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-number h1 {
+  font-size: var(--biggest-font-size);
+}
+
+.project-number h3 {
+  font-weight: var(--font-regular);
+  font-size: var(--h3-font-size);
+}
+
+.project-data {
+  margin-block: 2rem;
+}
+
+.project-title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
+}
+
+.project-subtitle {
+  font-family: var(--second-font);
+  font-size: var(--small-font-size);
+  margin-bottom: .5rem;
+}
+
+.project-description {
+  font-size: var(--small-font-size);
+}
+
+.project-img {
+  border-radius: 1.5rem;
+}
+
+.project-button {
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--body-color);
+  border: 3px solid var(--first-color);
+  border-radius: 50%;
+  color: var(--title-color);
+  font-size: 2rem;
+  position: absolute;
+  top: .75rem;
+  right: .75rem;
+  /* opacity: 0;
+  pointer-events: none; */
+  transition: box-shadow .4s, opacity .4s;
+}
+
+.project-button:hover {
+  box-shadow: 0 0 24px var(--first-color);
+}
+
+.project-image:hover .project-button {
+  opacity: 1;
+  pointer-events: initial;
+}
+
 
 
 /* Swiper class */
