@@ -512,6 +512,10 @@ img {
     margin-inline: auto;
   }
 
+   .about-container {
+      grid-template-columns: 460px;
+      justify-content: center;
+    }
 
   .home-social {
     top: 15rem;
@@ -525,6 +529,11 @@ img {
 
   .home-social {
     top: 15rem;
+  }
+
+  .about-data,
+  .about-data .section-title {
+    text-align: center;
   }
 }
 
@@ -617,6 +626,46 @@ img {
     font-size: var(--normal-font-size);
     rotate: 0deg;
     right: 0;
+  }
+
+  .about-container {
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    column-gap: 5.5rem;
+    padding-top: 2rem;
+  }
+
+  .about-data,
+  .about-data .section-title {
+    text-align: initial;
+    z-index: 2;
+  }
+
+  .about-description {
+    margin-bottom: 3rem;
+  }
+
+  .about-perfl {
+    width: 500px;
+  }
+
+  .about-image {
+    order: -1;
+  }
+
+  .about-image .blob-animate:nth-child(1) {
+    left: 4rem;
+    top: 4rem;
+  }
+
+  .about-image .blob-animate:nth-child(2) {
+    right: -1rem;
+    bottom: 3rem;
+  }
+
+  .about-shadow {
+    height: 600px;
+    bottom: 0;
   }
 }
 
