@@ -653,10 +653,18 @@ img {
   left: -6px;
 }
 /* Show & hide sections */
+.work-area [data-content]{
+  display: none;
+}
 
+.work-active [data-content]{
+  display: grid;
+}
 
 /* Active tab */
-
+.work-button.work-active {
+  color: var(--first-color);
+}
 
 /*=============== SERVICES ===============*/
 
