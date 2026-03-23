@@ -568,7 +568,25 @@ img {
   transition: opacity .4s;
 }
 /*=============== WORK ===============*/
+.work-tabs {
+  background-color: var(--container-color);
+  padding: 1.25rem 2rem;
+  border-radius: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
 
+.work-button {
+  background: none;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+  font-size: var(--small-font-size);
+  font-family: var(--second-font);
+  cursor: pointer;
+  transition: color .4s;
+}
 
 /* Show & hide sections */
 
