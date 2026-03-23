@@ -40,14 +40,22 @@ const swiperProject = new Swiper('.project-swiper', {
     clickable: true,
   },
 
-  // autoplay: {
-  //   delay: 3000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
 });
 
 /*=============== WORK TABS ===============*/
+const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]')
 
+tabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    const targetSelector = tab.dataset.target,
+          targetContent = document.querySelector(targetSelector)
+  })
+})
 
 /*=============== SERVICES ACCORDION ===============*/
 
