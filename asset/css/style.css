@@ -537,8 +537,8 @@ img {
   position: absolute;
   top: .75rem;
   right: .75rem;
-  /* opacity: 0;
-  pointer-events: none; */
+  opacity: 0;
+  pointer-events: none;
   transition: box-shadow .4s, opacity .4s;
 }
 
@@ -554,8 +554,19 @@ img {
 
 
 /* Swiper class */
+.project-swiper {
+  margin-inline: initial;
+  padding-bottom: 2rem;
+}
 
+ .swiper-pagination-bullets{
+  bottom: 0;
+}
 
+.swiper-pagination-bullet {
+  background-color: var(--first-color);
+  transition: opacity .4s;
+}
 /*=============== WORK ===============*/
 
 
