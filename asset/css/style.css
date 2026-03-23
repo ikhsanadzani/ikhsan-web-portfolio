@@ -613,6 +613,9 @@ img {
     height: 220px;
   }
   
+  .project-card {
+    padding-inline: 1rem;
+  }
 }
 
 /* For medium devices */
@@ -629,6 +632,15 @@ img {
 
   .home-social {
     top: 15rem;
+  }
+
+  :is(.project) .section-title {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .project-card {
+    width: 350px;
   }
 }
 
@@ -776,6 +788,37 @@ img {
   .about-shadow {
     height: 600px;
     bottom: 0;
+  }
+
+  .project {
+    padding-block: 9rem 4rem;
+  }
+
+  .project-swiper {
+    padding-bottom: 4rem;
+  }
+
+  .project-container {
+    max-width: 1380px;
+  }
+
+  .project-card {
+    width: 440px;
+    padding: 2.5rem;
+    border-radius: 4rem;
+  }
+
+  .project-subtitle, .project-description {
+    font-size: var(--normal-font-size);
+  } 
+
+  .project-img {
+    border-radius: 2rem;
+  }
+
+  .project-button {
+    top: 1.5rem;
+    right: 1.5rem;
   }
 }
 

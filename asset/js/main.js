@@ -37,12 +37,13 @@ const swiperProject = new Swiper('.project-swiper', {
 
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
 });
 
 /*=============== WORK TABS ===============*/
