@@ -635,7 +635,22 @@ img {
 .work-line {
   width: 4px;
   height: 100%;
-  background: linear-gradient(180deg);
+  background: linear-gradient(180deg,
+              hsla(var(--hue), 60%, 64%, 0),
+              var(--first-color-alt-2));
+  position: absolute;
+  left: -.25rem;
+}
+
+.work-line:after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-color: var(--first-color-alt-2);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -1px;
+  left: -6px;
 }
 /* Show & hide sections */
 
