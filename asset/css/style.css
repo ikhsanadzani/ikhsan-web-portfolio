@@ -657,7 +657,7 @@ img {
   display: none;
 }
 
-.work-active [data-content]{
+.work-active[data-content]{
   display: grid;
 }
 

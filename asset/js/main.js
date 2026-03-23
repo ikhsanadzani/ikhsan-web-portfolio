@@ -54,6 +54,14 @@ tabs.forEach((tab) => {
   tab.addEventListener('click', () => {
     const targetSelector = tab.dataset.target,
           targetContent = document.querySelector(targetSelector)
+
+    // mematikan semua konten dan active tabs
+    tabContents.forEach((content) => content.classList.remove('work-active'))
+    tabs.forEach((t) => t.classList.remove('work-active'))
+
+    // menyalakan tab dan menyesuaikan konten
+    tab.classList.add('work-active')
+    targetContent.classList.add('work-active')
   })
 })
 
