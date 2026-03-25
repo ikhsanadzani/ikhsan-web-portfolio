@@ -71,6 +71,25 @@ const servicesButtons = document.querySelectorAll('.service-button')
 servicesButtons.forEach(button => {
   const heightInfo = document.querySelector('.service-info')
   heightInfo.style.height = heightInfo.scrollHeight + 'px'
+
+  button.addEventListener('click', () => {
+    const servicesCards = document.querySelectorAll('.service-card'),
+          currentCard = button.parentNode,
+          currentInfo = currentCard.querySelector('.service-info'),
+          isCardOpen = currentCard.classList.contains('service-card')
+
+    servicesCards.forEach(card => {
+      card.classList.replace('service-open', 'service-close')
+
+      const info = card.querySelector('.service-info')
+            info.style.height = '0'
+    })
+
+    if(isCardOpen){
+      currentCard.classList.replace('service-close', 'service-open')
+      currentInfo.style.height = currentInfo.scrollHeight + 'px'
+    }
+  })
 })
 
 /*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/
