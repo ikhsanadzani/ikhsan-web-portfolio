@@ -66,7 +66,12 @@ tabs.forEach((tab) => {
 })
 
 /*=============== SERVICES ACCORDION ===============*/
+const servicesButtons = document.querySelectorAll('.service-button')
 
+servicesButtons.forEach(button => {
+  const heightInfo = document.querySelector('.service-info')
+  heightInfo.style.height = heightInfo.scrollHeight + 'px'
+})
 
 /*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/
 
