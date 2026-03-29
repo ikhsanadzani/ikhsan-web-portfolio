@@ -14,9 +14,6 @@
          Green: hsl(110, 60%, 64%) - Cyan: hsl(180, 60%, 64%)
          Orange: hsl(15, 60%, 64%) - Red: hsl(358, 60%, 64%)
 
-         For more colors visit: https://htmlcolorcodes.com/
-         -> Choose any color 
-         -> Copy the color mode (HSL)
   */
   --hue: 300;
   --first-color: hsl(var(--hue), 60%, 64%);

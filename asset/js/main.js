@@ -160,5 +160,22 @@ a.forEach(item => {
   item.addEventListener('mouseleave', () => {
     cursor.classList.remove('hide-cursor')
   })
-});
+})
+
 /*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal ({
+  origin: 'top',
+  distance: '60px',
+  duration: 2000,
+  delay: 300,
+  reset: true,
+})
+
+sr.reveal('.home-image, .project-container, .work-container, .contact-container')
+sr.reveal('.home-image')
+sr.reveal('.home-data', {delay: 900, origin: 'bottom'})
+sr.reveal('.home-info', {delay: 1200, origin: 'bottom'})
+sr.reveal('.home-social, .home-cv', {delay: 1500})
+sr.reveal('.about-data', {origin: 'left'})
+sr.reveal('.about-image', {origin: 'right'})
+sr.reveal('.service-card', {interval: 100})
