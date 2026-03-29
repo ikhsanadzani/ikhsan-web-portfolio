@@ -905,7 +905,7 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) { 
+@media screen and (min-width: 320px) { 
   .container {
     margin-inline: 1rem;
   }
@@ -922,6 +922,10 @@ img {
 
   .work-tabs {
     padding-inline: 1rem;
+  }
+
+  .home-social {
+    top: 12rem;
   }
 }
 
@@ -940,7 +944,7 @@ img {
     }
 
   .home-social {
-    top: 15rem;
+    top: 12rem;
   }
 
   :is(.project) .section-title {
@@ -964,7 +968,7 @@ img {
   }
 
   .home-social {
-    top: 15rem;
+    top: 12rem;
   }
 
   .about-data,
