@@ -15,7 +15,7 @@
          Orange: hsl(15, 60%, 64%) - Red: hsl(358, 60%, 64%)
 
   */
-  --hue: 300;
+  --hue: 255;
   --first-color: hsl(var(--hue), 60%, 64%);
   --first-color-alt: hsl(var(--hue), 80%, 56%);
   --first-color-alt-2: hsl(var(--hue), 60%, 56%);
